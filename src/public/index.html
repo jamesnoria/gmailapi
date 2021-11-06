@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>NodeMailerTest</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form class="form" action="/send-email" method="POST">
+        <div class="pageTitle title">Node Mailer Test</div>
+        <div class="secondaryTitle title">
+          Fill this form to send me something.
+        </div>
+        <input
+          type="text"
+          name="name"
+          class="name formEntry"
+          placeholder="Name"
+          autofocus
+        />
+        <input
+          type="text"
+          name="email"
+          class="email formEntry"
+          placeholder="Email"
+        />
+        <textarea
+          name="message"
+          class="message formEntry"
+          placeholder="Message"
+        ></textarea>
+        <button class="submit formEntry">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
